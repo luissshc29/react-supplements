@@ -1,0 +1,22 @@
+@import 'styles/variaveis';
+
+.botao__voltar {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	font-size: 1em;
+	font-family: $fonte-texto;
+	background-color: $branco;
+	border: none;
+	color: $cinza;
+	margin-top: 1em;
+	width: 100%;
+
+	p {
+		grid-column: 2;
+	}
+	
+	&:hover {
+		cursor: pointer;
+	}
+}

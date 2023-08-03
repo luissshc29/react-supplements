@@ -1,0 +1,26 @@
+@import 'styles/variaveis';
+
+.container__quantidade{
+	display: flex;
+	gap: 10px;
+	border: 1px solid $cinza;
+	border-radius: 18px;
+	padding: 0.8em 1em;
+	font-size: 1.3em;
+	align-items: center;
+
+	p {
+		margin: 0 0.6em;
+	}
+
+	&__botao {
+		border: none;
+		background-color: $branco;
+		font-size: 1.1em;
+		font-family: $fonte-texto;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,160 @@
+@import 'styles/variaveis';
+
+.paginaProduto {
+	margin-top: 2em;
+	min-height: calc(100vh - 9em - 5em);
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 10% 35% 30% 30%;
+		margin: 2em auto;
+		width: 80%;
+		column-gap: 20px;
+
+		&__imagem {
+			grid-row: 1 / span 4;
+			width: 60%;
+			justify-self: center;
+			align-self: center;
+		}
+
+		&__categoria {
+			font-size: 0.9em;
+			color:$cinza;
+			text-transform: capitalize;
+			grid-column: 2;
+			grid-row:1 ;
+			align-self: center;
+		}
+
+		&__nome {
+			font-size: 2em;
+			font-weight: 700;
+			grid-column: 2;
+			padding-bottom: 0.5em;
+		}
+
+		&__preco {
+			font-size: 2em;
+			font-weight: 700;
+			color: $vermelho;
+			grid-column: 2;
+			margin: 0;
+			justify-self: left;
+			padding-top: 0.5em;
+		}
+
+		&__quantidade__botao {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			gap: 3em;
+			
+
+			.container__quantidade{
+				display: flex;
+				gap: 10px;
+				border: 1px solid $cinza;
+				border-radius: 18px;
+				padding: 0.8em 1em;
+				font-size: 1.3em;
+				align-items: center;
+
+				p {
+					margin: 0 0.6em;
+				}
+
+				&__botao {
+					border: none;
+					background-color: $branco;
+					font-size: 1.1em;
+					font-family: $fonte-texto;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+
+	.paginaProduto{
+		height: 50vh;
+		margin-top: 3em;
+		min-height: 100vh;
+		min-width: 100vw;
+		width: 100vw;
+
+		.container {
+			grid-template-columns: 1fr;
+			grid-template-rows: 50% 3% 10% 10% 27%;
+			align-items: center;
+			width: 85%;
+			margin: 0 auto ;
+			height: 100%;
+
+			&__imagem {
+				width: 30%;
+				grid-column: 1;
+				grid-row: 1;		
+			}
+
+			@media screen and (max-width:650px){
+				.container__imagem {
+					width: 45%;
+				}
+			}
+
+			&__categoria {
+				grid-column: 1;
+				grid-row: 2;
+				font-size: 0.8em;
+				color: $cinza-sombra;
+			}
+
+			&__nome {
+				grid-column: 1;
+				grid-row: 3;
+				font-size: 1.5em;
+				padding: 0;
+			}
+
+			&__preco {
+				grid-row: 4;
+				grid-column: 1;
+				margin: 0;
+			}
+
+			&__quantidade__botao {
+				grid-row: 5;
+				grid-column: 1;
+				align-self: flex-start;
+				align-items: center;
+				gap: 10px;
+				display: grid;
+				grid-template-columns: 40% 60%;
+
+				.container__quantidade {
+					padding: 0.5em;
+					gap: 0px;
+					justify-content: space-evenly;
+
+					p {
+						margin: 0;
+					}
+
+					&__botao {
+						display: inline-block;
+						padding: 0;
+						height: 1em;
+					}
+				}
+			}
+
+		}
+	}
+}

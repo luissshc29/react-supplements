@@ -1,0 +1,167 @@
+@import 'styles/variaveis';
+
+.banner, .banner__inativo {
+	display: grid;
+	grid-template-columns: 40% 40% 20%;
+	align-items: center;
+	text-align: center;
+	height: 9em;
+	width: 100%;
+	color: $vermelho;
+	border: none;
+	box-shadow: 0 2px 6px $cinza-sombra-mais-clara;
+	background-image: url('../../../public/assets/banner.jpg');
+
+	.banner__link{
+		text-decoration: none;
+		color: $vermelho;
+	}
+
+	&__container__logo {
+		display: flex;
+		align-items: center;
+		justify-self: center;
+		padding-left: 1em;
+
+		.banner__logo {
+			width: 5em;
+			padding: 1em;
+		}
+
+		.banner__titulo {
+			font-size: 3.3em;
+			font-family: $fonte-titulo-banner;
+			font-weight: 500;
+
+			span {
+				font-size: 0.5em;
+				color: $branco;
+			}
+
+		}
+	}
+
+	&__container__input {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		&__inativo {
+			display: none;
+		}
+
+		.banner__input {
+			grid-row: 1;
+			height: 1.2em;
+			width: 100%;
+			border: none;
+			border-radius: 24px;
+			padding: 1em;
+			font-size: 1.1em;
+			box-shadow: 2px 2px 4px $cinza-sombra inset, -2px -2px 4px $cinza-sombra inset;
+			font-family: $fonte-texto;
+			transition: 300ms;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.banner__input__icone {
+			grid-row: 1;
+			justify-self: right;
+			align-self: center;
+			color: $cinza;
+			font-size: 1.3em;
+		}
+
+	}
+
+	&__carrinho {
+		text-decoration: none;
+		color: $branco;
+		font-size: 1.8em;
+		font-weight: 500;
+
+		&__icone {
+			box-shadow: 3px 3px 4px $cinza-sombra inset, -3px -3px 4px $cinza-sombra inset;
+			border-radius: 100%;
+			padding: 0.3em;
+
+			&:hover {
+				transition: 300ms;
+				scale: 1.1;
+			}
+
+		}
+
+		&__inativo {
+			grid-column: 3;
+			justify-self: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.banner, .banner__inativo {
+		min-width: 100vw;
+		height: 7em;
+		padding: 0.5em 0;
+		grid-template-columns: 80% 20%;
+		grid-template-rows: 1fr 1fr;
+
+		&__inativo {
+			height: 5em;
+			grid-template-rows: 1fr;
+		}
+
+		&__container__logo {
+
+			.banner__titulo {
+				font-size: 2em;
+				text-align: left;
+				line-height: 1em;
+				margin-left: 0.5em;
+			}
+
+			.banner__logo {
+				width: 3em;
+				padding: 0;
+			}
+		}
+
+		&__container__input {
+			grid-row: 2;
+			grid-column: 1 / span 2;
+			width: 80%;
+			margin: 0 auto;
+			padding: 0;
+
+			.banner__input {
+				height: 0.3em;
+				padding: 0.8em;
+
+				&::placeholder {
+					padding: 0;
+					font-size: 0.9em;
+				}
+
+				&__icone {
+					font-size: 1em;
+				}
+			}
+		}
+
+		&__carrinho {
+			font-size: 1.5em;
+
+			&__icone {
+				padding: 0.2em;
+			}
+
+			&__inativo {
+				grid-column: 2;
+				justify-self: center;
+			}
+		}
+	}
+}

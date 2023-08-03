@@ -1,0 +1,43 @@
+@import 'styles/variaveis';
+
+.opcao {
+	width: 15%;
+	height: 3.4em;
+	color: $branco;
+	font-size: 1.2em;
+	background-color:$vermelho-escuro;
+	font-family: $fonte-texto;
+	text-transform: capitalize;
+	border: none;
+	box-shadow: 2px 0 6px $cinza-sombra inset, -2px 0 6px $cinza-sombra inset;
+
+	&__ativa {
+		background-color: $vermelho;
+		box-shadow: 2px 0 6px $cinza-sombra inset, -2px 0 6px $cinza-sombra inset;
+	}
+}
+
+@media screen and (min-width:1024px) {
+
+	.opcao:hover{
+		transition: 300ms;
+		background-color: $vermelho;
+		box-shadow: 2px 0 6px $cinza-sombra inset, -2px 0 6px $cinza-sombra inset;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width:1024px){
+	.opcao {
+		width: 22%;
+		height: 3em;
+		font-size: 0.8em;
+		box-shadow: 1px 0 4px $cinza-sombra inset, -1px 0 4px $cinza-sombra inset;
+
+		&__ativa {
+			background-color: $vermelho;
+			box-shadow: 2px 0 6px $cinza-sombra inset, -2px 0 6px $cinza-sombra inset;
+		}
+	
+	}
+}

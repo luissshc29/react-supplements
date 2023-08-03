@@ -1,0 +1,22 @@
+$vermelho: #ff0000;
+$vermelho-escuro: #970000;
+$vermelho-mediano:#c40000;
+$branco:#ffffff;
+$fonte-titulo-banner:'Origin Tech', sans-serif;
+$fonte-texto:'GlacialIndifference', sans-serif;
+$cinza-sombra:#4141418a;
+$cinza-sombra-mais-clara:#41414136;
+$cinza:rgb(82, 82, 82);
+$preto:#000000;
+$verde-claro:#84fd84;
+$verde:#039b03;
+
+@font-face {
+	font-family: 'Origin Tech';
+	src: url('../assets/fontes/OriginTech\ personal\ use.otf');
+}
+
+@font-face {
+	font-family: 'GlacialIndifference';
+	src: url('../assets/fontes/GlacialIndifference-Regular.otf');
+}

@@ -1,0 +1,23 @@
+[
+	{
+		"nome": "Creatinas",
+		"id": 1,
+		"categoria": "creatina"
+	},
+	{
+		"nome": "Proteínas",
+		"id": 2,
+		"categoria": "whey"
+	},
+	{
+		"nome": "Pré-Treinos",
+		"id": 3,
+		"categoria": "pre-treino"
+	},
+	{
+		"nome": "Acessórios",
+		"id": 4,
+		"categoria": "acessorio"
+	}
+
+]

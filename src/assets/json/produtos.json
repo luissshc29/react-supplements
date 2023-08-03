@@ -1,0 +1,170 @@
+[
+	{
+		"nome":"Whey 3W - Vitafor (900g) Sabor Chocolate",
+		"valor": 213.3,
+		"imagem":"/assets/whey/whey-3w-vitafor.webp",
+		"id": 1,
+		"categoria": "whey"
+	},
+	{
+		"nome":"Whey Concentrado - New Millen (900g) Sabor Baunilha",
+		"valor": 242.0,
+		"imagem":"/assets/whey/whey-concentrado-new-millen.webp",
+		"id":2,
+		"categoria":"whey"
+	},
+	{
+		"nome":"Whey 100% - Integralmédica (900g) Sabor Baunilha",
+		"valor":126.3,
+		"imagem":"/assets/whey/whey-100-integral-medica.png",
+		"id":3,
+		"categoria":"whey"
+	},
+	{
+		"nome":"Whey Isolado - Growth Supplements (1Kg) Sabor Chocolate",
+		"valor":144.0,
+		"imagem":"/assets/whey/whey-isolado-growth.png",
+		"id":4,
+		"categoria":"whey"
+	},
+	{
+		"nome":"Creatina Hardcore - Integralmédica (300g)",
+		"valor":111.9,
+		"imagem":"/assets/creatinas/creatina-integral-medica.png",
+		"id":5,
+		"categoria":"creatina"
+	},
+	{
+		"nome":"Creatina Monohidratada - Midway (300g)",
+		"valor":126.5,
+		"imagem":"/assets/creatinas/creatina-midway.jpg",
+		"id":6,
+		"categoria":"creatina"
+	},
+	{
+		"nome":"Creatina Monohidratada - Growth Supplements (250g)",
+		"valor":79.2,
+		"imagem":"/assets/creatinas/creatina-mono-growth.png",
+		"id":7,
+		"categoria":"creatina"
+	},
+	{
+		"nome":"Pré-Treino C4 - New Millen (225g) Sabor Frutas Roxas",
+		"valor":59.9,
+		"imagem":"/assets/pre-treinos/pre-treino-c4.webp",
+		"id":8,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Pré-Treino Égide - Max Titanium (300g) Sabor Frutas Vermelhas",
+		"valor":135.5,
+		"imagem":"/assets/pre-treinos/pre-treino-egide.png",
+		"id":9,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Pré-Treino Haze - Growth Supplements (300g) Sabor Tutti Frutti",
+		"valor":103.5,
+		"imagem":"/assets/pre-treinos/pre-treino-haze-growth.png",
+		"id":10,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Camiseta de compressão - Alpha Co. Cor Preta",
+		"valor":39.9,
+		"imagem":"/assets/acessorios/camisa-alpha-co.webp",
+		"id":11,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Cinturão de musculação - Muvin Cor Preta",
+		"valor":69.9,
+		"imagem":"/assets/acessorios/cinturao-muvin.jpg",
+		"id":12,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Luva para musculação - Hidrolight Cor Preta",
+		"valor":39.9,
+		"imagem":"/assets/acessorios/luva-hidrolight.jpg",
+		"id":13,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Strap para musculação - SKDK Cor Preta",
+		"valor":39.9,
+		"imagem":"/assets/acessorios/strap-skdk.jpg",
+		"id":14,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Top Whey 3W - Max Titanium (900g) Sabor Chocolate",
+		"valor":176.6,
+		"imagem":"/assets/whey/whey-3w-max.png",
+		"id":15,
+		"categoria":"whey"
+	},
+	{
+		"nome":"Tênis Nike Revolution 6 - Masculino Cor Preta",
+		"valor":279.9,
+		"imagem":"/assets/acessorios/tenis-nike.avif",
+		"id":16,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Albumina - Growth Supplements (1kg) Sabor Natural",
+		"valor":85.5,
+		"imagem":"/assets/whey/albumina-growth.png",
+		"id":17,
+		"categoria":"whey"
+	},
+	{
+		"nome":"Creatina Monohidratada - Probiótica (300g)",
+		"valor":149.9,
+		"imagem":"/assets/creatinas/creatina-probiotica.webp",
+		"id":18,
+		"categoria":"creatina"
+	},
+	{
+		"nome":"Coqueteleira -  Probiótica (500ml) Cor Preta e Grafite",
+		"valor":29.9,
+		"imagem":"/assets/acessorios/coqueteleira-probiotica.webp",
+		"id":19,
+		"categoria":"acessorio"
+	},
+	{
+		"nome":"Pré-Treino Évora PW - Darkness (300g) Sabor Frutas Vermelhas",
+		"valor":134.4,
+		"imagem":"/assets/pre-treinos/pre-treino-evora.png",
+		"id":20,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Pré-Treino Insanity Growth Supplements (300g) Sabor Limão",
+		"valor":108.0,
+		"imagem":"/assets/pre-treinos/pre-treino-insanity.png",
+		"id":21,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Pré-Treino Nuclear Rush - Bodyaction (100g) Sabor Guaraná",
+		"valor":99.8,
+		"imagem":"/assets/pre-treinos/pre-treino-nuclear.webp",
+		"id":22,
+		"categoria":"pre-treino"
+	},
+	{
+		"nome":"Creatine Turbo - Black Skull (300g) Sabor Laranja",
+		"valor":50.1,
+		"imagem":"/assets/creatinas/creatina-blackskull.webp",
+		"id":23,
+		"categoria":"creatina"
+	},
+	{
+		"nome":"Creatina Monohidratada - Max Titanium (300g)",
+		"valor":127.8,
+		"imagem":"/assets/creatinas/creatina-mono-max.png",
+		"id":24,
+		"categoria":"creatina"
+	}
+]

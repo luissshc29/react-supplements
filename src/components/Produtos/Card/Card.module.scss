@@ -1,0 +1,122 @@
+@import 'styles/variaveis';
+
+.card {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 50% 25% 25%;
+	text-align: center;
+	border-right: 1px solid $cinza-sombra-mais-clara;
+	border-left: 1px solid $cinza-sombra-mais-clara;
+	padding: 1em;
+	text-decoration: none;
+	color: $cinza;
+	transition: 300ms;
+	align-items: center;
+
+	@media screen and (min-width:1024px) {
+
+		&:hover {
+			scale: 1.05;
+			cursor: pointer;
+			border-radius: 20px;
+			box-shadow: 0.5px 0.5px 20px $cinza-sombra-mais-clara, -0.5px -0.5px 20px $cinza-sombra-mais-clara;
+	
+			.card__preco {
+				transition: 300ms;
+				color: $vermelho;
+				font-weight: 700;
+				scale: 1.1;
+			}
+	
+			.card__carrinho {
+				transition: 300ms;
+				color: $vermelho;
+				scale: 1.1;
+				border-radius: 100%;
+			}
+		}
+
+	}
+
+	&__imagem {
+		width: 13vw; 
+		grid-column: 1 / span 2;
+		justify-self: center;
+		margin-top: 1em;
+	}
+
+	&__titulo {
+		grid-column: 1 / span 2;
+		font-size: 1.5em;
+		line-height: 1.1em;
+	}
+
+	&__preco, &__carrinho {
+		font-size: 1.4em;
+		align-self: center;
+		justify-self: center;
+	}
+
+	&__preco {
+		font-weight: 700;
+	}
+
+	&__carrinho {
+		font-size: 1.7em;
+		border: none;
+		background-color: $branco;
+		color: $preto;
+
+		&__icone {
+			margin: auto 0;
+		}
+		
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.card {
+		padding: 1em 0;
+		width: 100%;
+		grid-template-columns: 30% 20% 50%;
+		grid-template-rows: 70% 30%;
+		align-items: center;
+		border-top: 0.5px solid $cinza-sombra-mais-clara;
+		border-bottom: 0.5px solid $cinza-sombra-mais-clara;border-right: 0;
+		border-left: 0;
+
+		&__imagem {
+			width: 70%;
+			grid-column: 1 / span 1;
+			grid-row: 1 / span 2;
+		}
+
+		&__titulo, &__preco, &__carrinho {
+			font-size: 0.8em;
+			padding: 0;
+			text-align: left;
+			justify-self: left;
+		}
+
+		&__titulo {
+			grid-column: 2 / span 2;
+			grid-row: 1;
+		}
+
+		&__preco {
+			color: $vermelho;
+			grid-column: 2;
+			grid-row: 2;
+		}
+
+		&__carrinho {
+			grid-row: 2;
+			justify-self: left;
+			align-self: center;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+[
+	{
+		"nome": "Boleto",
+		"juros": 1, 
+		"id": 1
+	}, {
+		"nome": "Cartão de Crédito",
+		"juros": 1.1,
+		"id": 2
+	}, {
+		"nome": "PIX",
+		"juros": 1,
+		"id": 3
+	}, {
+		"nome": "Cartão de Débito",
+		"juros": 1,
+		"id": 4
+	}
+]

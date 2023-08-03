@@ -1,0 +1,221 @@
+@import 'styles/variaveis';
+
+.paginaCarrinho {
+	min-height: 100vh;
+
+	.carrinho {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 80%;
+		margin: 0 auto;
+
+		&__titulo {
+			font-size: 1.6em;
+			margin: 1em 0;
+			text-align: center;
+			padding-bottom: 0.5em;
+			border-bottom: 1px solid $cinza-sombra-mais-clara;
+		}
+
+		&__itens {
+			display: grid;
+			grid-template-columns: 1fr;
+			width: 70%;
+			margin: 0 auto;
+			border-bottom: 1px solid $cinza-sombra;
+			padding-bottom: 2em;
+
+			&__item {
+				display: grid;
+				grid-template-columns: 50% 25% 25%;
+				grid-template-rows: 1fr 1fr;
+				justify-content: center;
+				align-items: center;
+				margin: 0.8em 0;
+				padding: 1em;
+				border-radius: 24px;
+				box-shadow: 0.5px 0.5px 10px $cinza-sombra-mais-clara, -0.5px -0.5px 10px $cinza-sombra-mais-clara;
+
+				&__imagem {
+					width: 50%;
+					grid-row: 1 / span 2;
+					justify-self: center;
+					height: auto;
+				}
+
+				&__titulo {
+					grid-column: 2 / span 2;
+					font-size: 1.2em;
+					font-weight: 600;
+					text-align: left;
+				}
+
+				&__preco {
+					font-size: 1.3em;
+					font-weight: 500;
+				}
+
+				div {
+					grid-column: 3;
+					justify-content: space-evenly;
+
+					button {
+						padding: 0;
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+.mensagemCompra {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 50%;
+	margin: 1em auto;
+	padding: 2em;
+	background-color: $verde-claro;
+	border: 2px solid $verde;
+	color: $verde;
+	font-size: 0.7em;
+	border-radius: 24px;
+	font-weight: 500;
+	box-shadow: 2px 2px 10px $cinza-sombra-mais-clara, -2px -2px 10px $cinza-sombra-mais-clara;
+
+	h2 {
+		margin: 0;
+	}
+
+	&__icone {
+		font-size: 1.5em;
+	}
+}
+
+.mensagemCarrinhoVazio {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: auto;
+	margin: 1em auto;
+	padding: 2em;
+	font-size: 0.7em;
+	border-radius: 24px;
+	font-weight: 500;
+
+	h2 {
+		margin: 0;
+	}
+
+	&__icone {
+		font-size: 1.5em;
+	}
+}
+
+.container__pagamento {
+	display: grid;
+	grid-template-rows: 30% 15% 15% 15% 25%;
+	gap: 10px;
+	height: 15em;
+	width: 56%;
+	margin: 4em auto;
+	justify-content: end;
+	text-align: right;
+	align-items: center;
+
+	p {
+		font-size: 1.4em;
+		line-height: 1.2em;
+
+		span {
+			font-weight: 700;
+		}
+
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+
+		label {
+			font-size: 1.4em;
+			font-weight: 700;
+			margin-bottom: 0.5em;
+		}
+
+		select {
+			margin-bottom: 1em;
+			padding: 0.5em;
+			border-radius: 24px;
+			font-family: $fonte-texto;
+		}
+	}
+
+}
+
+@media screen and (max-width:1024px){
+
+	.paginaCarrinho {
+
+		.carrinho {
+			width: 100%;
+			margin: 0;
+
+			&__titulo {
+				font-size: 1.5em;
+			}
+
+			&__itens {
+				width: 90%;
+
+				&__item {
+					height: 8em;
+					grid-template-columns: 40% 35% 25%;
+
+					&__imagem {
+						width: 50%;
+
+						@media screen and (min-width:650px) and (max-width:1024px) {
+							width: 25%;
+						}
+					}
+
+					&__titulo {
+						margin: 0;
+						font-size: 1em;
+						text-align: left;
+					}
+
+					&__preco {
+						font-size: 1em;
+					}
+
+					div {
+						scale: 0.6;
+					}
+
+				}
+			}
+		}
+
+		.container__pagamento {
+			width: 90%;
+			margin: 4em 0 4em 0;
+			justify-self: right;
+
+			label {
+				font-size: 1.2em;
+			}
+
+			p {
+				font-size: 1.2em;
+			}
+
+			.botao {
+				height: 50%;
+			}
+		}
+	}
+}

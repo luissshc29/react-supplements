@@ -1,0 +1,37 @@
+@import "styles/variaveis";
+
+html {
+	font-family: $fonte-texto;
+}
+
+.titulo {
+	text-align: center;
+	margin: 3em 0 1.7em 0;
+	font-size: 2em;
+}
+
+.produtos {
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	width: 90%;
+	margin: 2em auto;
+	justify-content: space-evenly;
+	row-gap: 3.5em;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.titulo {
+		font-size: 1.5em;
+		padding: 1em;
+		border-top: 1px solid $cinza-sombra-mais-clara;
+		width: 80%;
+		margin: 3em auto 0 auto;
+	}
+
+	.produtos {
+		width: 90%;
+		grid-template-columns: 1fr;
+		row-gap: 0;
+	}
+}
