@@ -1,43 +1,58 @@
-@import 'styles/variaveis';
+@import "styles/variaveis";
 
-.rodape, .rodape__fixado {
-	background-color: $vermelho-escuro;
-	color: $branco;
-	padding: 1.5em 0;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	font-size: 1.1em;
-	width: 100%;
-	margin: 0 auto;
-	height: 1.8em;
+.rodape,
+.rodape__fixado {
+  background-color: $vermelho-escuro;
+  color: $branco;
+  padding: 1.5em 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.1em;
+  width: 100%;
+  margin: 0 auto;
+  height: 1.8em;
 
-	p, div {
-		padding-top: 0.2em;
-	}
+  p,
+  div {
+    padding-top: 0.2em;
+  }
 
-	&__links {
-		display: flex;
-		align-items: flex-end;
-		a {
-			text-decoration: none;
-			color: $branco;
-			font-size: 1.1em;
-			padding-left: 0.3em;
-		}
+  &__texto {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 
-	}
+    a {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      text-decoration: underline;
+      color: white;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: flex-end;
+    a {
+      text-decoration: none;
+      color: $branco;
+      font-size: 1.1em;
+      padding-left: 0.3em;
+    }
+  }
 }
 
 .rodape__fixado {
-	position: fixed;
-	width: 100%;
-	bottom: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-@media screen and (max-width:1024px) {
-	.rodape {
-		font-size: 0.9em;
-		font-weight: 400;
-	}
+@media screen and (max-width: 1024px) {
+  .rodape {
+    font-size: 0.9em;
+    font-weight: 400;
+  }
 }
